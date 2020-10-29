@@ -1,3 +1,6 @@
+pub mod bencoding;
+use bencoding::{decode, decode_file};
+
 fn main() {
-    println!("Hello, world!");
+    // decode_file("./sample.txt");
 }
