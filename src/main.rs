@@ -2,5 +2,7 @@ pub mod bencoding;
 use bencoding::{decode, decode_file};
 
 fn main() {
-    // decode_file("./sample.txt");
+    let string = "4:spam".as_bytes();
+    let a = decode(string);
+    println!("result={:?}", a);
 }
